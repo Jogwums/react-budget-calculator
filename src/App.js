@@ -87,6 +87,10 @@ function App() {
     setExpenses([])
     handleAlert({type:'danger', text:`all items successfully deleted`})
   }
+  // clear local storage 
+  const clearLocalStorage = () => {
+    localStorage.clear(expenses)
+  }
 
   // handle delete 
   const handleDelete = (id) => {
@@ -131,6 +135,7 @@ function App() {
                         return (acc += parseInt(curr.amount));
                     }, 0)}</span> 
             </h1>
+            <button onClick={clearLocalStorage}>clear persistent storage</button>
           </main>
         </div>
     
