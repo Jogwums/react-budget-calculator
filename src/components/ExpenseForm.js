@@ -1,10 +1,12 @@
 import React from 'react'
-import {MdSend} from 'react-icons/md'
+import {MdSend} from 'react-icons/md';
+
+// import Input from './Input';
 
 export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleCharge, edit}) => {
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
            <div className="form-center">
                 <div className="form-group">
                     <label htmlFor="charge" >Charge</label>

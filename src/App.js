@@ -114,7 +114,7 @@ function App() {
   return (
         <div className="wrapper">
           {alert.show && <Alert type={alert.type} text={alert.text} />}
-          <h1 style={{color:"white", letterSpacing:"3px"}}> Budget Calculator </h1>
+          <h1 className="title"> Budget Calculator </h1>
           <main className="app"> 
             <ExpenseForm charge={charge}
               amount={amount} 
