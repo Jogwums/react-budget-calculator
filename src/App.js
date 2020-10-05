@@ -128,7 +128,7 @@ function App() {
               handleEdit={handleEdit}
               clearItems={clearItems} />
           
-            <h1 className="total-report"> Total Expenses {" :  "}
+            <h1 className="total-report"> Expenses {":"}
                 <span className="total">
                   {"\u20A6 "}
                     {expenses.reduce((acc, curr) => {

@@ -265,7 +265,6 @@ code {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: max-content;
     padding: 0px; margin: 0px;
   }
   .form-group, .form-group input{
@@ -284,5 +283,6 @@ code {
   }
   .total-report{
     font-size: 1rem;
+    font-weight: 500;
   }
 }
