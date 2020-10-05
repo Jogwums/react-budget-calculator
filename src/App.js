@@ -135,7 +135,7 @@ function App() {
                         return (acc += parseInt(curr.amount));
                     }, 0)}</span> 
             </h1>
-            <button style={{background:"white", color:"red", padding:"10px 20px", fontWeight:"bold", position:"absolute", bottom:"0", left:"0"}} onClick={clearLocalStorage}>clear persistent storage</button>
+            <button style={{display:"none",background:"white", color:"red", padding:"10px 20px", fontWeight:"bold", position:"absolute", bottom:"0", left:"0"}} onClick={clearLocalStorage}>clear persistent storage</button>
           </main>
         </div>
     
