@@ -1,11 +1,21 @@
-import React from 'react'
-import './button.css'
+import React, {useState} from 'react'
+import {useSpring, animated} from 'react-spring'
 
-export default function Input() {
-    return (
-        <span>
-            Input
-            <div class="loading-3 loading"></div>
-        </span>
-    )
+function Input() {
+    const [registrationFormStatus, setRegistartionFormStatus] = useState(true);
+
+  const loginBtnProps = useSpring({
+    borderBottom: registrationFormStatus ? 'solid 2px transparent' : 'solid 2px #1059FF'
+  })
+
+
+  function loginClicked() {
+    setRegistartionFormStatus(false);
+  }
+
+  return(
+    <animated.input id="loginBtn" className="active" onFocus={loginClicked} style={loginBtnProps}></animated.input>
+  )
 }
+
+export default Input;

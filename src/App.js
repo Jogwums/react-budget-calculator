@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 import Alert from './components/Alert'
 import { ExpenseForm } from './components/ExpenseForm';
-import { ExpenseItem } from './components/ExpenseItem';
+// import Input  from './components/Input';
 import { ExpenseList } from './components/ExpenseList';
 
 // const initialExpenses = [
@@ -113,8 +113,8 @@ function App() {
 
   return (
         <div className="wrapper">
-          {alert.show && <Alert type={alert.type} text={alert.text} />}
           <h1 className="title"> Budget Calculator </h1>
+          {alert.show && <Alert type={alert.type} text={alert.text} />}
           <main className="app"> 
             <ExpenseForm charge={charge}
               amount={amount} 
