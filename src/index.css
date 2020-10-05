@@ -282,4 +282,7 @@ code {
     color: white;
     letter-spacing: 0;
   }
+  .total-report{
+    font-size: 1rem;
+  }
 }
