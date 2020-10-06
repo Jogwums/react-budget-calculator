@@ -15,22 +15,22 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
     const loginBtnProps2 = useSpring({
         borderBottom: amountBorder ? 'solid 2px white' : 'solid 2px #1059FF'
       })
-    function chargeClicked(e) {
+    function chargeClicked() {
         setChargeBorder(false);
         setChargeLabel(false);
     }
-    function amountClicked(e) {
+    function amountClicked() {
         setAmountBorder(false);
         setAmountLabel(false);
       }
     
       //Label Animation
       const showLabel = useSpring({
-        display: amountLabel ? 'none' : 'block'
+        opacity: amountLabel ? '0' : '1'
       })
 
       const showLabel2 = useSpring({
-        display: chargeLabel ? 'none' : 'block'
+        opacity: chargeLabel ? '0' : '1'
       })
       
     //End of animated input
@@ -70,7 +70,7 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
 
            </div>
            <button className="send-btn ">
-            {edit? 'edit':'submit'}
+            {edit? 'edit':'submit'} {""}
             <MdSend className="send-icon" />
            </button>
         </form>
