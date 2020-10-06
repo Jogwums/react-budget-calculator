@@ -16,7 +16,7 @@ export const ExpenseList = ({expenses, handleEdit, handleDelete, clearItems}) =>
                 
             </ul>
             {expenses.length > 0 && <button className="clearall-btn" onClick={clearItems}>
-                Clear Expenses <MdDelete className="btn-icon"/> 
+                Clear All <MdDelete className="clearall-btn-icon"/> 
                 </button>}
         </div>
     )
