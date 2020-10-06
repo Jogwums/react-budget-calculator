@@ -81,6 +81,7 @@ code {
   font-size: 1.5rem;
   text-transform: uppercase;
   margin: 5px auto;
+  padding: 4px 8px;
 }
 .send-btn{
   background-color: #55917f;
@@ -107,6 +108,7 @@ code {
   font-size: 1.5rem;
   margin: 0;
   height: 1.1rem;
+  
 }
 .clearall-btn:focus{
   transform: scale(1.1);
@@ -267,6 +269,7 @@ code {
   .clearall-btn{
     display: block;
     margin: 0px auto 0px auto;
+    padding: 5px 5px;
   }
   
 }
@@ -303,7 +306,7 @@ code {
   }
   .clearall-btn{
     display: block;
-    margin: 0px auto 0px -20px;
-    
+    margin: 0px auto 0px auto;
+    padding: 5px 5px;
   }
 }
