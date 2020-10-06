@@ -262,12 +262,11 @@ code {
     padding: 0;
   }
   .total-report{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .clearall-btn{
     display: block;
     margin: 0px auto 0px auto;
-    
   }
   
 }
