@@ -50,7 +50,8 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
                             value={charge}
                             onFocus={chargeClicked}
                             style={loginBtnProps}
-                            onChange={handleCharge}>
+                            onChange={handleCharge}
+                            autocomplete="off">
                     </animated.input>
                 </div>
                 <div className="form-group">
@@ -64,6 +65,7 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
                             onFocus={amountClicked}
                             style={loginBtnProps2}
                             onChange={handleAmount}
+                            autocomplete="off"
                             >
                     </animated.input>
                 </div>
