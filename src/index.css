@@ -206,16 +206,19 @@ code {
   text-transform: capitalize;
   width: 90%;
   margin: 0.1rem auto 0 auto;
-  border-radius: 2px;
+  border-radius: 10px;
 
 }
 
 .alert-danger{
   background-color: #d62828;
+  padding: 0.3rem; margin: 0;
+  width: max-content;
 }
 
 .alert-success{
   background-color: green;
+  padding: 0.3rem; margin: 0;
 }
 
 /* Media Query */
@@ -262,6 +265,9 @@ code {
     align-items: center;
     margin: 10px auto;
     padding: 0;
+  }
+  .send-btn {
+    
   }
   .total-report{
     font-size: 1.1rem;

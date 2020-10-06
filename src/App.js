@@ -78,7 +78,7 @@ function App() {
       // handleAlert is called 
       handleAlert({type:'danger', text:`charge can't be empty and amount larger than zero`});
     }
-  
+    
   }
 
   // clear all items 
@@ -112,7 +112,7 @@ function App() {
 
   return (
         <div className="wrapper">
-          <h1 className="title"> Budget Calculator </h1>
+          <h1 className="title"> Expense Calculator</h1>
           {alert.show && <Alert type={alert.type} text={alert.text} />}
           <main className="app"> 
             <ExpenseForm charge={charge}

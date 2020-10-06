@@ -41,7 +41,7 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
         <form className="form" onSubmit={handleSubmit}>
            <div className="form-center">
                 <div className="form-group">
-                    <animated.label htmlFor="charge" style={showLabel2}>Charge</animated.label>
+                    <animated.label htmlFor="charge" style={showLabel2}>Item</animated.label>
                     <animated.input type="text" 
                             id="charge" 
                             name="charge" 
@@ -55,7 +55,7 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
                     </animated.input>
                 </div>
                 <div className="form-group">
-                    <animated.label htmlFor="expense" style={showLabel} >Amount</animated.label>
+                    <animated.label htmlFor="expense" style={showLabel}>Cost</animated.label>
                     <animated.input type="number" 
                             id="amount" 
                             name="amount" 
