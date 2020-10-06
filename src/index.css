@@ -2,6 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  background-color: #b4aab2;
 }
 button{
   border-radius: 5px;
@@ -12,7 +13,7 @@ code {
     monospace;
 }
 .wrapper{
-  background-color: #b4aab2;
+  background-color: inherit;
   width: 1200px;
   max-width: 100%;
   display: flex;
