@@ -271,7 +271,8 @@ code {
     padding: 0;
   }
   .send-btn {
-     content: '';
+     padding: 5px 0;
+     font-size: 3.5rem;
   }
   .total-report{
     font-size: 1.1rem;
