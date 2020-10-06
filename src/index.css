@@ -248,6 +248,12 @@ code {
     margin-bottom: 20px;
     padding: 0px 10px 10px 0px ;
   }
+  .edit-btn, .clear-btn{
+    padding: .5rem .5rem;
+  }
+  .edit-icon, .clear-icon{
+    font-size: 2rem;
+  }
   .send-btn{
     display: flex;
     flex-direction: column;
