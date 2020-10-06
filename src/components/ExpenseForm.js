@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {MdSend} from 'react-icons/md';
+import {MdSend, MdEdit} from 'react-icons/md';
 import {useSpring, animated} from 'react-spring'
 
 
@@ -72,8 +72,8 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
 
            </div>
            <button className="send-btn ">
-            {edit? 'edit':'submit'} {""}
-            <MdSend className="send-icon" />
+            {edit? <MdEdit />: <MdSend />}
+            {/* <MdSend className="send-icon" /> */}
            </button>
         </form>
     )

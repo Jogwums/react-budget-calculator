@@ -118,7 +118,7 @@ code {
   transform: scale(1.1);
 }
 .edit-btn{
-  background-color: white;
+  background-color: rgb(248, 240, 240);
   padding: 2px 6px;
   border: 1px solid white;
   transition: all 500ms ease;
