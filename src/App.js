@@ -34,7 +34,7 @@ function App() {
 
   // Use Effect 
   React.useEffect(() => {
-      console.log("we called useEffect");
+      // console.log("we called useEffect");
       localStorage.setItem("expenses", JSON.stringify(expenses))
 
   }, [expenses]);
@@ -83,7 +83,6 @@ function App() {
 
   // clear all items 
   const clearItems = () =>{
-    console.log("clear all ")
     setExpenses([])
     handleAlert({type:'danger', text:`all items successfully deleted`})
   }
