@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #b4aab2;
 }
+html, body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 button{
   border-radius: 5px;
 }
@@ -267,7 +271,7 @@ code {
     padding: 0;
   }
   .send-btn {
-    
+     content: '';
   }
   .total-report{
     font-size: 1.1rem;
