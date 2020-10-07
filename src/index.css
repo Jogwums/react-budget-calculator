@@ -250,6 +250,7 @@ code {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     margin: 10px 0 10px auto;
   }
@@ -285,6 +286,9 @@ code {
   .send-btn {
      padding: 5px 0;
      font-size: 3.5rem;
+  }
+  .item{
+    justify-content: space-around;
   }
   .total-report{
     font-size: 1.1rem;
