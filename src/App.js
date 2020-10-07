@@ -112,9 +112,16 @@ function App() {
 
   return (
         <div className="wrapper">
-          <h1 className="title"> Expense Calculator</h1>
+          <h2 className="title"> Expense Calculator</h2>
           {alert.show && <Alert type={alert.type} text={alert.text} />}
           <main className="app"> 
+          <h1 className="total-report"> Expenses {":"}
+                <span className="total">
+                  {"\u20A6 "}
+                    {expenses.reduce((acc, curr) => {
+                        return (acc += parseInt(curr.amount));
+                    }, 0)}</span> 
+            </h1>
             <ExpenseForm charge={charge}
               amount={amount} 
               handleAmount={handleAmount}
@@ -127,13 +134,7 @@ function App() {
               handleEdit={handleEdit}
               clearItems={clearItems} />
           
-            <h1 className="total-report"> Expenses {":"}
-                <span className="total">
-                  {"\u20A6 "}
-                    {expenses.reduce((acc, curr) => {
-                        return (acc += parseInt(curr.amount));
-                    }, 0)}</span> 
-            </h1>
+            
             {/* <button style={{display:"none",background:"white", color:"red", padding:"10px 20px", fontWeight:"bold", position:"absolute", bottom:"0", left:"0"}} onClick={clearLocalStorage}>clear persistent storage</button> */}
           </main>
         </div>

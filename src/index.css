@@ -198,7 +198,7 @@ code {
   justify-content: center;
   color: white;
   font-size: 1.6rem;
-  margin: 10px auto 0 10px;
+  margin: 0px auto 20px 10px;
 }
 .total{
   background-color: #55917f;
@@ -283,7 +283,7 @@ code {
     margin: 10px auto;
     padding: 0;
   }
-  .send-btn {
+  .send-btn{
      padding: 5px 0;
      font-size: 3.5rem;
   }
@@ -291,7 +291,8 @@ code {
     justify-content: space-around;
   }
   .total-report{
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
   }
   .clearall-btn{
     display: block;
