@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {MdSend, MdEdit} from 'react-icons/md';
 import {useSpring, animated} from 'react-spring'
-
+import {useTransition } from 'react-spring'
 
 export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleCharge, edit}) => {
     //Animated input
@@ -22,7 +22,7 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
     function amountClicked() {
         setAmountBorder(false);
         setAmountLabel(false);
-      }
+    }
     
       //Label Animation
       const showLabel = useSpring({
@@ -32,7 +32,14 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
       const showLabel2 = useSpring({
         opacity: chargeLabel ? '0' : '1'
       })
-      
+      // test with transition 
+      // const [toggle, set] = useState(false)
+      // const transition = useTransition(toggle, null, {
+      //   from: { position: 'absolute', opacity: 0 },
+      //   enter: { opacity: 1 },
+      //   leave: { opacity: 0 }
+      // })
+
     //End of animated input
     //<animated.input id="loginBtn" className="active" onFocus={loginClicked} style={loginBtnProps}></animated.input>
     // Useable element above 
@@ -48,7 +55,7 @@ export const ExpenseForm = ({amount, charge, handleSubmit, handleAmount, handleC
                             className="form-control"
                             placeholder={"e.g.credit "}
                             value={charge}
-                            onFocus={chargeClicked}
+                            onFocus={ chargeClicked }
                             style={loginBtnProps}
                             onChange={handleCharge}
                             autocomplete="off">

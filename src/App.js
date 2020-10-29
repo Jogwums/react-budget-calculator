@@ -78,7 +78,6 @@ function App() {
       // handleAlert is called 
       handleAlert({type:'danger', text:`charge can't be empty and amount larger than zero`});
     }
-    
   }
 
   // clear all items 
@@ -106,7 +105,6 @@ function App() {
     setAmount(amount);
     setEdit(true);
     setId(id);
-
   }
   //pass these methods/ functions into the component that requires them 
 
@@ -122,19 +120,21 @@ function App() {
                         return (acc += parseInt(curr.amount));
                     }, 0)}</span> 
             </h1>
-            <ExpenseForm charge={charge}
-              amount={amount} 
+            <ExpenseForm 
+			  charge={charge}
+              amount={amount}
               handleAmount={handleAmount}
               handleCharge={handleCharge}
               handleSubmit={handleSubmit}
               edit={edit}
               />
-            <ExpenseList expenses={expenses}
+            <ExpenseList 
+			  expenses={expenses}
               handleDelete={handleDelete}
               handleEdit={handleEdit}
-              clearItems={clearItems} />
-          
-            
+              clearItems={clearItems} 
+			  />
+           
             {/* <button style={{display:"none",background:"white", color:"red", padding:"10px 20px", fontWeight:"bold", position:"absolute", bottom:"0", left:"0"}} onClick={clearLocalStorage}>clear persistent storage</button> */}
           </main>
         </div>
