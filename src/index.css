@@ -2,7 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background-color: #b4aab2;
+  background-color: #5a094a;
 }
 html, body{
   max-width: 100%;
@@ -161,7 +161,8 @@ code {
   margin: 0 .5rem 0 .5rem;
 }
 .info{
-  color: #55917f;
+  /* color: #55917f; */
+  color: #fffded;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
